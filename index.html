@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Feliz Dia dos Namorados</title>
+    <style>
+        .content {
+            height: 110vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .animated-text {
+            opacity: 0;
+            transform: translateX(-100px);
+            transition: opacity 1s, transform 1s;
+        }
+
+        .animated-text.animated {
+            opacity: 1;
+            transform: translateX(0);
+            color: #fff;
+        }
+
+        .content:first-child {
+            margin-bottom: 40px;
+            /* Adicione uma margem inferior para separar a primeira seção de conteúdo */
+        }
+
+        .content:last-child {
+            margin-top: 40px;
+            /* Adicione uma margem superior para separar a segunda seção de conteúdo */
+        }
+
+        #love-letter-modal {
+            background: url("https://i.pinimg.com/originals/b2/b1/f1/b2b1f1c5d4718f1f9ca49eb23c056f7b.gif") no-repeat center center fixed;
+            background-size: cover;
+            color: #000;
+        }
+        body{
+            background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('https://1.bp.blogspot.com/-y5rPf9uoH3E/XOvWq9pKqHI/AAAAAAAAD54/6whvTKDa43Uudhd4IRncfLwyO3p95mZOwCLcBGAs/s1600/gif-heart-8.gif') no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+            <div class="content">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="images/IMG-20230517-WA0008.jpeg"
+                            alt="Imagem 1" class="img-fluid">
+                    </div>
+                    <div class="col-lg-6 align-self-center">
+                        <h4 class="animated-text">Nosso amor é como uma chama que aquece minha alma, iluminando cada momento
+                            que compartilhamos juntos. Você é meu porto seguro, minha inspiração diária e a razão do meu
+                            sorriso. Meu coração é seu, hoje e sempre.</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="row">
+                    <div class="col-lg-6 order-lg-2">
+                        <img src="images/20230429_164412.jpeg"
+                            alt="Imagem 2" class="img-fluid">
+                    </div>
+                    <div class="col-lg-6 order-lg-1 align-self-center">
+                        <h4 class="animated-text">Desde o dia em que te encontrei, minha vida ganhou um novo sentido. Você
+                            trouxe cor, alegria e uma intensidade única. Cada instante ao seu lado é mágico, e cada gesto
+                            seu me faz sentir amado. Sou grato por ter você na minha vida, e prometo cuidar do nosso
+                            amor com todo o meu ser.</h4>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="love-letter-modal" tabindex="-1" role="dialog" aria-labelledby="love-letter-modal-label"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="love-letter-modal-label">Minha Declaração de Amor</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Querida mulher da minha vida,</p>
+                    <p>Escrevo esta carta cheia de emoção e carinho para expressar o amor que sinto por você. Desde o
+                        momento em que nos conhecemos, minha vida se transformou de maneiras que eu jamais poderia ter
+                        imaginado. Cada dia ao seu lado é um presente valioso que eu aprecio mais do que palavras podem
+                        descrever.</p>
+                    <p>Quando estou com você, sinto-me completo. Seu sorriso ilumina meu mundo, seu toque acalma minha
+                        alma e sua voz é a melodia que embala meus sonhos. É incrível como seu amor preenche todos os
+                        espaços vazios do meu coração, enchendo-o de alegria e felicidade.</p>
+                    <p>Nossa conexão é profunda e especial. Com você, sinto-me livre para ser quem sou, sem medo de
+                        julgamentos. Nossas conversas profundas, risadas compartilhadas e momentos de ternura fortalecem
+                        nosso vínculo e fazem com que cada momento juntos seja único.</p>
+                    <p>Você é a pessoa que eu admiro, respeito e valorizo imensamente. Seu apoio incondicional e seu
+                        amor me inspiram a ser uma versão melhor de mim mesmo todos os dias. Com você ao meu lado, sei
+                        que posso enfrentar qualquer desafio que a vida apresentar.</p>
+                    <p>Lembro-me dos momentos especiais que passamos juntos, desde as aventuras mais simples até as
+                        comemorações mais significativas. Cada memória está gravada em meu coração, tornando-se tesouros
+                        preciosos que guardo com carinho.</p>
+                    <p>Quero que saiba que estou aqui para você, em todos os momentos. Nos dias felizes, quero
+                        compartilhar sua alegria e celebrar suas conquistas. Nos dias difíceis, estarei ao seu lado,
+                        oferecendo meu ombro para você se apoiar e meu amor para confortar seu coração.</p>
+                    <p>Amo tudo em você - sua bondade, sua inteligência, seu senso de humor e sua beleza única. Você é a
+                        pessoa que eu escolhi amar e cuidar, hoje e para sempre. Meu amor por você só cresce a cada dia,
+                        e agradeço a sorte de ter você como sua companheira de vida.</p>
+                    <p>Com todo o amor do meu coração,</p>
+                    <p>Jefferson.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        window.alert('toque na tela para reproduzir a música')
+        var secretFound = false;
+
+        // Função para exibir o modal da declaração de amor
+        function showLoveLetterModal() {
+            $('#love-letter-modal').modal('show');
+        }
+
+        // Verifica se o segredo foi descoberto ao clicar nas imagens
+        $('.img-fluid').click(function () {
+            if (!secretFound) {
+                secretFound = false;
+                showLoveLetterModal();
+            }
+        });
+        var sound = new Howl({
+            src: ['audio/Zé Neto e Cristiano - MEU MEDO.mp3'],
+            autoplay: true,
+            loop: true,
+            volume: 0.5
+        });
+
+        sound.once('load', function () {
+            sound.play();
+        });
+
+        $(window).scroll(function () {
+            $('.animated-text').each(function () {
+                var elementTop = $(this).offset().top;
+                var viewportBottom = $(window).scrollTop() + $(window).height();
+                if (elementTop < viewportBottom) {
+                    $(this).addClass('animated');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
